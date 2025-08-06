@@ -1,0 +1,7 @@
+div section div div a svg{
+    rotate: 0deg;
+    transition: rotate .2s ease-out
+}
+div section div div a:hover svg{
+    rotate: 90deg;
+}

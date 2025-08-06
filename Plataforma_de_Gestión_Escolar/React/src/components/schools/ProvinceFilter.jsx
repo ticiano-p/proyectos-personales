@@ -1,0 +1,56 @@
+import { useState } from 'react';
+
+const ProvinceFilter = ({ apiUrl, onResult }) => {
+  const [province, setProvince] = useState('');
+
+  const buscarPorProvincia = () => {
+    if (!province.trim()) return;
+
+    fetch(`${apiUrl}/school/${province}/province`)
+      .then(res => {
+        return res.json();
+      })
+      .then(data => onResult(data))
+
+      .catch(error => {
+        console.error('Error al buscar usuario:', error);
+        onResult([]); // Vaciamos resultados si no se encuentra
+      });
+  };
+
+  const obtenerTodos = () => {
+    fetch(`${apiUrl}/school`)
+      .then(res => res.json())
+      .then(data => onResult(data))
+      .catch(error => console.error('Error al cargar Escuelas:', error));
+  };
+
+  return (
+    <div className="flex gap-4 items-center mb-6">
+      <input
+        type="search"
+        placeholder="Buscar por Provincia"
+        className="min-w-75 p-2 border border-gray-400 rounded w-[250px]"
+        value={province}
+        onChange={(e) => setProvince(e.target.value)}
+      />
+      <button
+        onClick={buscarPorProvincia}
+        className="min-w-25 bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600"
+      >
+        Buscar
+      </button>
+      <button
+        onClick={() => {
+          setProvince('');
+          obtenerTodos();
+        }}
+        className="min-w-25 bg-gray-400 text-white px-4 py-2 rounded hover:bg-gray-500"
+      >
+        Ver Todos
+      </button>
+    </div>
+  );
+};
+
+export default ProvinceFilter;

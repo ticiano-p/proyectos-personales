@@ -1,0 +1,71 @@
+/* Estilos básicos tipo Bootstrap para contenido HTML renderizado */
+
+.HTMLForzado h1 {
+  font-size: 2.5rem;
+  font-weight: 500;
+}
+
+.HTMLForzado h2 {
+  font-size: 2rem;
+  font-weight: 500;
+}
+
+.HTMLForzado h3 {
+  font-size: 1.75rem;
+  font-weight: 500;
+}
+
+.HTMLForzado h4,
+.HTMLForzado h5,
+.HTMLForzado h6 {
+  font-weight: 500;
+}
+
+.HTMLForzado p {
+  line-height: 1.6;
+}
+
+.HTMLForzado ul,
+.HTMLForzado ol {
+  margin-bottom: 1rem;
+  padding-left: 2rem;
+}
+
+.HTMLForzado li {
+  margin-bottom: 0.5rem;
+}
+
+.HTMLForzado blockquote {
+  padding: 0.5rem 1rem;
+  margin: 1rem 0;
+  font-size: 1.25rem;
+  border-left: 0.25rem solid #dee2e6;
+  background-color: #f8f9fa;
+}
+
+.HTMLForzado a {
+  color: #0d6efd;
+  text-decoration: underline;
+}
+
+.HTMLForzado strong {
+  font-weight: 700;
+}
+
+.HTMLForzado em {
+  font-style: italic;
+}
+
+.HTMLForzado pre,
+.HTMLForzado code {
+  background-color: #f8f9fa;
+  padding: 0.25rem 0.5rem;
+  font-family: monospace;
+  border-radius: 0.25rem;
+  display: inline-block;
+}
+
+.HTMLForzado img {
+  max-width: 100%;
+  height: auto;
+}
