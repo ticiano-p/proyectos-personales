@@ -1,0 +1,9 @@
+Carrera: Diseño y Programacion WEB
+materia: Portales y Comercio Electrónico
+cuatrimestre: 4
+año: 2025
+turno: Mañana
+comisión: DWM4AP
+apellido y nombre: Ticiano Piccino Pujol
+docente: Carlos Ferrer
+carácter de entrega: (Final).

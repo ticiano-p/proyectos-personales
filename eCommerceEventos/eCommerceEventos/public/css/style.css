@@ -1,0 +1,91 @@
+html, body, #app{
+    height: 100%;
+    
+}
+body{
+  overflow-x: hidden;
+}
+#app
+{
+    display: grid;
+    grid-template-rows: 56px 1fr 100px;
+}
+
+.footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+}
+
+.footer p{
+    margin: 0;
+}
+
+.custom-navbar {
+    background-color: #333333; 
+}
+/* Inicio Index */
+.body {
+    background-color: #121212;
+    color: #fff;
+    
+  }
+  .btn-gold {
+    background-color: #d4af37;
+    color: #272727;
+    border: none;
+  }
+  .btn-gold:hover {
+    background-color: #b89b2e;
+    color: #000;
+  }
+  .blog-section {
+    background-color: #fff;
+    color: #000;
+    padding: 3rem 1rem;
+  }
+  .text-gray-300{
+    color:  #d1d5dc
+  }
+  .bg-gray-300{
+    background-color:  #d1d5dc
+  }
+  .bg-stone-800{
+    background-color: #1f1f1f;
+  }
+.icon{
+  max-width: 80px;
+  max-height: 80px;
+  /* width: 100%; */
+  height: auto;
+}
+.baner-BaE-360{
+  max-width: auto;
+  max-height: auto;
+   width: 90%; 
+  height: auto;
+}
+
+ 
+.textarea-scroll {
+    height: 200px;
+    overflow-y: auto;
+    resize: none;
+  
+}
+
+
+@keyframes giro360 {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(-360deg);
+  }
+}
+.giro-despacio {
+  animation: giro360 5s linear infinite;
+}
+
+
