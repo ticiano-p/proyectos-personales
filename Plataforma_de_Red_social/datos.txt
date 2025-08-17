@@ -1,0 +1,10 @@
+Carrera: Diseño y Desarrollo Web
+Materia: Clientes Web Mobile
+Cuatrimestre: 4
+Año: 2025
+Turno: Mañana
+Comision: DWM4AP
+Apellido: Piccino Pujol
+Nombre: Ticiano
+Docente: Santiago Gallino
+Caracter de entrega: 2do parcial
